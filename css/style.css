@@ -1,0 +1,87 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+*::before,*::after{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #ffee00;
+    margin: 0;
+}
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+.notes_app {
+    margin-top: 10px;
+    padding-bottom: 40px;
+}
+.title {
+    font-size: 60px;
+    color: #000000;
+}
+.user_interface{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 11px;
+}
+.add_notes,
+.delete_notes {
+    font-size: 18px;  
+}
+.add_notes span,
+.delete_notes span {
+    text-transform: uppercase;
+}
+.user_input {
+    outline: none;
+    border: solid 2px #ffee00;
+    width: 450px;
+    height: 50px;
+    font-size: 18px;
+    color: #ffee00;
+    background-color: rgba(0, 0, 0,0.8);
+    box-shadow: 0px 8px 30px 0px rgba(0, 0, 0, 0.9);
+    padding-left: 15px;
+}
+.user_input::-webkit-input-placeholder{
+    font-size: 14px;
+    color: #ffee00;
+}
+.cards_notes {
+    margin-top: 80px;
+    display: flex;
+    column-gap: 40px;
+    flex-wrap: wrap;
+    row-gap: 40px;
+}
+.card_note{
+    width: 300px;
+    height: 300px;
+    /* background-color: #efe993; */
+    box-shadow: 0px 10px 24px 0px rgba(0,0,0,0.75);
+    cursor: pointer;
+}
+.card_note p{
+    font-size: 30px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.delete_note{
+    border: none;
+    outline: none;
+    font-size: 18px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: transparent;
+    cursor: pointer;
+    display: none;
+}
+.card_note:hover button{
+    display: block;
+}
